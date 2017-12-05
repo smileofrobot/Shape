@@ -1,0 +1,30 @@
+package com.company;
+// abstract class ro get area of any shape with interface Comparable
+abstract class Shape implements Comparable<Shape> {
+    public int result;
+
+    Shape() {
+    }
+
+    abstract double getAea();
+
+    public String toString() {
+        return "[S: " + this.getAea() + "]";
+    }
+
+    public int compareTo(Shape s) {
+        if (s == null) {
+            throw new NullPointerException();
+        } else {
+            if (this.getAea() > s.getAea()) {
+                this.result = 1;
+            } else if (this.getAea() < s.getAea()) {
+                this.result = -1;
+            } else {
+                this.result = 0;
+            }
+
+            return this.result;
+        }
+    }
+}
