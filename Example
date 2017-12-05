@@ -1,0 +1,13 @@
+package com.company;
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+        Shape Rect = new Rect(100.0D, 100.0D);
+        Shape Rectangle = new Rect(100.0D, 100.0D);
+        Shape Circle = new Circle(100.0D);
+        Shape[] Shape = new Shape[]{Rect, Rectangle, Circle};
+        System.out.println(Arrays.toString(Shape));
+        Arrays.sort(Shape);
+        System.out.println(Arrays.toString(Shape));
+    }
+}
