@@ -1,0 +1,16 @@
+package com.company;
+// helps to get the area of any circle
+public class Circle extends Shape {
+    double R;
+    double CircleArea;
+
+    public Circle(double r) {
+        this.getAea();
+        this.R = r;
+    }
+
+    double getAea() {
+        this.CircleArea = (double)Math.round(this.R * this.R * 3.141592653589793D);
+        return this.CircleArea;
+    }
+}
