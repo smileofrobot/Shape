@@ -1,0 +1,17 @@
+package com.company;
+//helps tp get the area of any reactangle 
+public class Rect extends Shape {
+    double A;
+    double B;
+    double area;
+    String Area;
+    public Rect(double a, double b) {
+        this.getAea();
+        this.A = a;
+        this.B = b;
+    }
+    double getAea() {
+        this.area = this.A * this.B;
+        return this.area;
+    }
+}
